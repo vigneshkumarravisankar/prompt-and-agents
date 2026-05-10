@@ -1,0 +1,408 @@
+[
+    {
+        "invoice_number": "GNCE1772015",
+        "date": "6 Apr",
+        "vendor_name": "GNC India",
+        "vendor_address": null,
+        "customer_name": "Vignesh Kumar R",
+        "customer_address": "Mohan Ram Illam Peelamedu, Balan Nagar, Coimbatore, Tamilnadu 641004 COIMBATORE Tamil Nadu India",
+        "line_items": [
+            {
+                "description": "GNC - Buy 3 for \u20b9 1999",
+                "quantity": 1,
+                "unit_price": 1999.0,
+                "total": 1999.0
+            }
+        ],
+        "subtotal": 1999.0,
+        "tax_amount": 0.0,
+        "total_amount": 1974.0,
+        "currency": "INR",
+        "processed_at": "2026-05-10T12:43:47.542421"
+    },
+    {
+        "invoice_number": "INV-3337",
+        "date": "January 25, 2016",
+        "vendor_name": "DEMO - Sliced Invoices",
+        "vendor_address": "Suite 5A-1204, 123 Somewhere Street, Your City AZ 12345",
+        "customer_name": "Test Business",
+        "customer_address": "123 Somewhere St, Melbourne, VIC 3000",
+        "line_items": [
+            {
+                "description": "Web Design",
+                "quantity": 1.0,
+                "unit_price": 85.0,
+                "total": 85.0
+            }
+        ],
+        "subtotal": 85.0,
+        "tax_amount": 8.5,
+        "total_amount": 93.5,
+        "currency": "$",
+        "processed_at": "2026-05-10T12:43:54.619211"
+    },
+    {
+        "invoice_number": "GNCE1772015",
+        "date": "4/6/26",
+        "vendor_name": "GNC India",
+        "vendor_address": null,
+        "customer_name": "Vignesh Kumar R",
+        "customer_address": "Mohan Ram Illam, Peelamedu, Balan Nagar, Coimbatore, Tamilnadu, 641004 COIMBATORE, Tamil Nadu, India",
+        "line_items": [
+            {
+                "description": "GNC - Buy 3 for \u20b9 1999",
+                "quantity": 1,
+                "unit_price": 1999.0,
+                "total": 1999.0
+            }
+        ],
+        "subtotal": 1999.0,
+        "tax_amount": 0.0,
+        "total_amount": 1974.0,
+        "currency": "INR",
+        "processed_at": "2026-05-10T12:49:46.192361"
+    },
+    {
+        "invoice_number": "INV-3337",
+        "date": "January 25, 2016",
+        "vendor_name": "DEMO - Sliced Invoices",
+        "vendor_address": "Suite 5A-1204, 123 Somewhere Street, Your City AZ 12345",
+        "customer_name": "Test Business",
+        "customer_address": "123 Somewhere St, Melbourne, VIC 3000",
+        "line_items": [
+            {
+                "description": "Web Design This is a sample description...",
+                "quantity": 1.0,
+                "unit_price": 85.0,
+                "total": 85.0
+            }
+        ],
+        "subtotal": 85.0,
+        "tax_amount": 8.5,
+        "total_amount": 93.5,
+        "currency": "$",
+        "processed_at": "2026-05-10T12:49:58.792963"
+    },
+    {
+        "invoice_id": "24443",
+        "order_id": "IN-2012-SZ2003527-41221",
+        "bill_to": "Sam Zeldin",
+        "ship_to": null,
+        "ship_to_address": "Nanchong, Sichuan, China",
+        "invoice_date": "Nov 08 2012",
+        "invoice_ship_mode": "Second Class",
+        "invoice_balance_due": 29377.07,
+        "line_items": [
+            {
+                "line_item_name": "Sharp Wireless Fax, Digital Copiers, Technology, TEC-CO-6010",
+                "line_item_quantity": 9,
+                "line_item_rate": 3200.04,
+                "line_item_amount": 28800.36
+            }
+        ],
+        "invoice_subtotal": 28800.36,
+        "invoice_discount": null,
+        "invoice_shipping": 576.71,
+        "invoice_total": 29377.07,
+        "processed_at": "2026-05-10T13:08:00.154404"
+    },
+    {
+        "invoice_id": "29496",
+        "order_id": "IN-2012-SC200507-41249",
+        "bill_to": "Sample Company A",
+        "ship_to": "Gold Coast",
+        "ship_to_address": "Gold Coast,\nQueensland,\nAustralia",
+        "invoice_date": "Dec 06 2012",
+        "invoice_ship_mode": "Standard Class",
+        "invoice_balance_due": 13239.94,
+        "line_items": [
+            {
+                "line_item_name": "Nokia Smart Phone, with Caller ID",
+                "line_item_quantity": 5,
+                "line_item_rate": 2875.1,
+                "line_item_amount": 14375.48
+            }
+        ],
+        "invoice_subtotal": 14375.48,
+        "invoice_discount": 1437.55,
+        "invoice_shipping": 302.01,
+        "invoice_total": 13239.94,
+        "processed_at": "2026-05-10T13:08:08.710167"
+    },
+    {
+        "invoice_id": "8884",
+        "order_id": "US-2012-SC200505-41163",
+        "bill_to": "Sample Company A",
+        "ship_to": "Sample Company A",
+        "ship_to_address": "La Plata, Provincia de Buenos Aires, Argentina",
+        "invoice_date": "Sep 11 2012",
+        "invoice_ship_mode": "Standard Class",
+        "invoice_balance_due": 2329.23,
+        "line_items": [
+            {
+                "line_item_name": "Bush Library with Doors, Pine Bookcases, Furniture, FUR-BO-3641",
+                "line_item_quantity": 5,
+                "line_item_rate": 731.34,
+                "line_item_amount": 3656.7
+            }
+        ],
+        "invoice_subtotal": 3656.7,
+        "invoice_discount": 1462.68,
+        "invoice_shipping": 135.21,
+        "invoice_total": 2329.23,
+        "processed_at": "2026-05-10T13:08:16.964588"
+    },
+    {
+        "invoice_id": "14500",
+        "order_id": "ES-2012-SF20065139-41200",
+        "bill_to": null,
+        "ship_to": "Sandra Flanagan",
+        "ship_to_address": "Worcester, England, United Kingdom",
+        "invoice_date": "Oct 18 2012",
+        "invoice_ship_mode": "Standard Class",
+        "invoice_balance_due": 7051.88,
+        "line_items": [
+            {
+                "line_item_name": "Sauder Classic Bookcase, Metal, Bookcases, Furniture, FUR-BO-5948",
+                "line_item_quantity": 4,
+                "line_item_rate": 1741.8,
+                "line_item_amount": 6967.2
+            }
+        ],
+        "invoice_subtotal": 6967.2,
+        "invoice_discount": null,
+        "invoice_shipping": 84.68,
+        "invoice_total": 7051.88,
+        "processed_at": "2026-05-10T13:08:26.559270"
+    },
+    {
+        "invoice_id": "48389",
+        "order_id": "UP-2012-SF10065137-41157",
+        "bill_to": "Sandra Flanagan",
+        "ship_to": null,
+        "ship_to_address": "Donets'k, Donetsk, Ukraine",
+        "invoice_date": "Sep 05 2012",
+        "invoice_ship_mode": "Second Class",
+        "invoice_balance_due": 12343.63,
+        "line_items": [
+            {
+                "line_item_name": "Rogers Trays, Industrial Storage, Office Supplies, OFF-ST-5710",
+                "line_item_quantity": 14,
+                "line_item_rate": 870.24,
+                "line_item_amount": 12183.36
+            }
+        ],
+        "invoice_subtotal": 12183.36,
+        "invoice_discount": null,
+        "invoice_shipping": 160.27,
+        "invoice_total": 12343.63,
+        "processed_at": "2026-05-10T13:08:37.924340"
+    },
+    {
+        "invoice_id": "1649",
+        "order_id": "MX-2012-SG2008039-41042",
+        "bill_to": "Sandra Glassco",
+        "ship_to": null,
+        "ship_to_address": "San Salvador, San Salvador, El Salvador",
+        "invoice_date": "May 13 2012",
+        "invoice_ship_mode": "Standard Class",
+        "invoice_balance_due": 6743.49,
+        "line_items": [
+            {
+                "line_item_name": "Tenex Lockers, Blue",
+                "line_item_quantity": 7,
+                "line_item_rate": 952.7,
+                "line_item_amount": 6668.9
+            }
+        ],
+        "invoice_subtotal": 6668.9,
+        "invoice_discount": null,
+        "invoice_shipping": 74.59,
+        "invoice_total": 6743.49,
+        "processed_at": "2026-05-10T13:08:54.075353"
+    },
+    {
+        "invoice_id": "27994",
+        "order_id": "IN-2012-SG2008058-41208",
+        "bill_to": "Sandra Glassco",
+        "ship_to": "Gorakhpur, Haryana, India",
+        "ship_to_address": "Gorakhpur, Haryana, India",
+        "invoice_date": "Oct 26 2012",
+        "invoice_ship_mode": "Standard Class",
+        "invoice_balance_due": 11641.02,
+        "line_items": [
+            {
+                "line_item_name": "Bush 3-Shelf Cabinet, Metal Bookcases, Furniture, FUR-BO-3615",
+                "line_item_quantity": 9,
+                "line_item_rate": 1285.47,
+                "line_item_amount": 11569.23
+            }
+        ],
+        "invoice_subtotal": 11569.23,
+        "invoice_discount": null,
+        "invoice_shipping": 71.79,
+        "invoice_total": 11641.02,
+        "processed_at": "2026-05-10T13:09:07.204277"
+    },
+    {
+        "invoice_id": "48589",
+        "order_id": "EG-2012-SJ1012538-40918",
+        "bill_to": "Sanjit Jacobs",
+        "ship_to": "Sanjit Jacobs",
+        "ship_to_address": "Cairo, Al Qahirah, Egypt",
+        "invoice_date": "Jan 10 2012",
+        "invoice_ship_mode": "Second Class",
+        "invoice_balance_due": 2016.09,
+        "line_items": [
+            {
+                "line_item_name": "Chromcraft Wood Table, Fully Assembled Tables, Furniture, FUR-TA-3778",
+                "line_item_quantity": 2,
+                "line_item_rate": 967.98,
+                "line_item_amount": 1935.96
+            }
+        ],
+        "invoice_subtotal": 1935.96,
+        "invoice_discount": null,
+        "invoice_shipping": 80.13,
+        "invoice_total": 2016.09,
+        "processed_at": "2026-05-10T13:09:13.924423"
+    },
+    {
+        "invoice_id": "25995",
+        "order_id": "IN-2012-SS2014027-41081",
+        "bill_to": "Saphhira Shifley",
+        "ship_to": null,
+        "ship_to_address": "Guangzhou, Guangdong, China",
+        "invoice_date": "Jun 21 2012",
+        "invoice_ship_mode": "Standard Class",
+        "invoice_balance_due": 1338.36,
+        "line_items": [
+            {
+                "line_item_name": "Hoover Microwave, Silver Appliances, Office Supplies, OFF-AP-4732",
+                "line_item_quantity": 2,
+                "line_item_rate": 618.78,
+                "line_item_amount": 1237.56
+            }
+        ],
+        "invoice_subtotal": 1237.56,
+        "invoice_discount": null,
+        "invoice_shipping": 100.8,
+        "invoice_total": 1338.36,
+        "processed_at": "2026-05-10T13:09:23.842766"
+    },
+    {
+        "invoice_id": "17043",
+        "order_id": "ES-2012-SL20155120-41243",
+        "bill_to": "Sara Luxemburg",
+        "ship_to": null,
+        "ship_to_address": "Valencia, Valenciana, Spain",
+        "invoice_date": "Nov 30 2012",
+        "invoice_ship_mode": "Second Class",
+        "invoice_balance_due": 9550.74,
+        "line_items": [
+            {
+                "line_item_name": "Brother Wireless Fax, Laser Copiers, Technology, TEC-CO-3611",
+                "line_item_quantity": 5,
+                "line_item_rate": 1894.05,
+                "line_item_amount": 9470.25
+            }
+        ],
+        "invoice_subtotal": 9470.25,
+        "invoice_discount": null,
+        "invoice_shipping": 80.49,
+        "invoice_total": 9550.74,
+        "processed_at": "2026-05-10T13:09:35.840452"
+    },
+    {
+        "invoice_id": "51080",
+        "order_id": "IV-2012-SL1015529-41212",
+        "bill_to": "Sara Luxemburg",
+        "ship_to": null,
+        "ship_to_address": "Bouake, Vallee Du Bandama, Cote d'Ivoire",
+        "invoice_date": "Oct 30 2012",
+        "invoice_ship_mode": "Standard Class",
+        "invoice_balance_due": 6057.53,
+        "line_items": [
+            {
+                "line_item_name": "SAFCO Swivel Stool, Black Chairs, Furniture, FUR-CH-5806",
+                "line_item_quantity": 6,
+                "line_item_rate": 993.06,
+                "line_item_amount": 5958.36
+            }
+        ],
+        "invoice_subtotal": 5958.36,
+        "invoice_discount": null,
+        "invoice_shipping": 99.17,
+        "invoice_total": 6057.53,
+        "processed_at": "2026-05-10T13:09:45.284992"
+    },
+    {
+        "invoice_id": "19933",
+        "order_id": "ES-2012-SB2017045-41250",
+        "bill_to": "Sarah Bern",
+        "ship_to": null,
+        "ship_to_address": "Vincennes, Ile-de-France, France",
+        "invoice_date": "Dec 07 2012",
+        "invoice_ship_mode": "Standard Class",
+        "invoice_balance_due": 5975.58,
+        "line_items": [
+            {
+                "line_item_name": "Apple Audio Dock, with Caller ID Phones, Technology, TEC-PH-3130",
+                "line_item_quantity": 7,
+                "line_item_rate": 993.0,
+                "line_item_amount": 6950.97
+            }
+        ],
+        "invoice_subtotal": 6950.97,
+        "invoice_discount": 1042.65,
+        "invoice_shipping": 67.26,
+        "invoice_total": 5975.58,
+        "processed_at": "2026-05-10T13:09:57.071641"
+    },
+    {
+        "invoice_id": "23277",
+        "order_id": "IN-2012-SB2017027-41208",
+        "bill_to": "",
+        "ship_to": "Sarah Bern",
+        "ship_to_address": "Huaibei, Anhui, China",
+        "invoice_date": "Oct 26 2012",
+        "invoice_ship_mode": "Second Class",
+        "invoice_balance_due": 12115.13,
+        "line_items": [
+            {
+                "line_item_name": "HP Copy Machine, Color",
+                "line_item_quantity": 7,
+                "line_item_rate": 1693.23,
+                "line_item_amount": 11852.61
+            }
+        ],
+        "invoice_subtotal": 11852.61,
+        "invoice_discount": null,
+        "invoice_shipping": 262.52,
+        "invoice_total": 12115.13,
+        "processed_at": "2026-05-10T13:10:09.963091"
+    },
+    {
+        "invoice_id": "23278",
+        "order_id": "IN-2012-SB2017027-41208",
+        "bill_to": "Sarah Bern",
+        "ship_to": null,
+        "ship_to_address": "Huaibei, Anhui, China",
+        "invoice_date": "Oct 26 2012",
+        "invoice_ship_mode": "Second Class",
+        "invoice_balance_due": 15099.29,
+        "line_items": [
+            {
+                "line_item_name": "Ikea Classic Bookcase, Traditional Bookcases, Furniture, FUR-BO-4851",
+                "line_item_quantity": 6,
+                "line_item_rate": 2470.5,
+                "line_item_amount": 14823.0
+            }
+        ],
+        "invoice_subtotal": 14823.0,
+        "invoice_discount": null,
+        "invoice_shipping": 276.29,
+        "invoice_total": 15099.29,
+        "processed_at": "2026-05-10T13:10:18.075312"
+    }
+]
