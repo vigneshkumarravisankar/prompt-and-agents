@@ -1,36 +1,53 @@
-# Assessment: AI Resume Parser
+# AI Research Paper Parser
 
 ## Objective
-Build a resume parsing pipeline that processes candidate resumes (PDF format) and extracts structured information into a local SQLite database using the provided prompt engineering framework.
-
-## Required Extraction Fields
-
-Your pipeline must extract the following fields **exactly** as specified:
-
-- `name`: Candidate's full name.
-- `email`: Contact email address.
-- `phone_no`: Contact phone number.
-- `experience_in_years`: Total professional experience in years (numeric).
-- `skills`: A list of strings (e.g., ["Python", "Machine Learning", "Communication"]).
-- `companies`: A list of objects with the following map:
-    - `company_name`: Name of the organization.
-    - `role`: Designation or job title.
-    - `job_responsibilities`: Key tasks and achievements in that role.
-- `projects`: A list of objects with the following map:
-    - `project_name`: Title of the project.
-    - `project_description`: Brief overview of what was built and tools used.
+Build a research paper parsing pipeline that processes academic papers (PDF format) and extracts structured information into a local SQLite database using the provided prompt engineering framework.
 
 ---
 
-## Implementation Requirements
+# Required Extraction Fields
 
-1.  **Text Extraction**: Use `pdfplumber` to extract text from the resumes.
-2.  **Prompt Engineering**: Use the 7-component prompt framework (Role, Task, Context, Input, Format, Constraints, Examples) to ensure high-quality parsing.
-3.  **Local Storage**:
-    -   Store the structured data in a local SQLite database (`candidates.db`) with relational tables for companies and projects.
-4.  **Batch Processing**: The script should handle multiple PDF files in a single run.
+Your pipeline must extract the following fields **exactly** as specified:
 
-## Evaluation Criteria
--   **Field Accuracy**: Correct extraction of dates and numeric values (years).
--   **Schema Adherence**: Strict matching of the JSON field names provided above.
--   **Consistency**: Performance across different resume formats.
+- `paper_title`: Title of the research paper.
+- `authors`: A list of author names.
+- `abstract`: Abstract section of the paper.
+- `keywords`: A list of keywords/topics.
+- `publication_year`: Year of publication (numeric).
+- `research_domain`: Domain/category of the paper (e.g., NLP, Computer Vision, Healthcare AI).
+- `methodologies`: A list of techniques, models, or algorithms used.
+- `datasets_used`: A list of datasets mentioned in the paper.
+- `results_summary`: Summary of the results and findings.
+- `references_count`: Total number of references/citations in the paper.
+- `sections`: A list of objects with the following map:
+    - `section_name`: Name of the section.
+    - `section_summary`: Brief summary of the section.
+- `authors_affiliations`: A list of objects with the following map:
+    - `author_name`: Name of the author.
+    - `affiliation`: University/Organization name.
+
+---
+
+# Implementation Requirements
+
+## 1. Text Extraction
+Use `pdfplumber` to extract text from the research papers.
+
+## 2. Prompt Engineering
+Use the 7-component prompt framework:
+
+1. Role  
+2. Task  
+3. Context  
+4. Input  
+5. Format  
+6. Constraints  
+7. Examples  
+
+The framework should ensure high-quality and consistent parsing.
+
+## 3. Local Storage
+Store the structured data in a local SQLite database named:
+
+```bash
+research_papers.db

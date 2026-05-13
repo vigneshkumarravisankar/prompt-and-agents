@@ -1,23 +1,317 @@
-# Assessment: AI Agents with Fake Store API
+# AI Multi-Agent Country Intelligence System
 
 ## Objective
-Build a multi-agent system that interacts with the [Fake Store API](https://fakestoreapi.com/docs) to manage an e-commerce platform's data.
+Build a multi-agent system that interacts with the REST Countries API to provide country intelligence, geographical analysis, and travel-related insights.
 
-## Tasks
-1. **Analyze API Endpoints**: Refer to the [Fake Store API Documentation](https://fakestoreapi.com/docs).
-2. **Implement API Tool**: Create a robust tool that can handle GET, POST, PATCH, and DELETE requests for various resources (Products, Carts, Users).
-3. **Build Specialized Agents**:
-    - **Products Agent**: Handle GET, POST, PATCH, and DELETE operations for products.
-    - **Carts Agent**: Handle GET, POST, PATCH, and DELETE operations for shopping carts.
-    - **Users Agent**: Handle GET, POST, PATCH, and DELETE operations for user profiles.
-4. **Coordinate with a Root Agent**: Implement a master agent that can delegate tasks to the specialized agents based on user queries.
+API Reference:
+https://restcountries.com/
 
-## Requirements
-- Use the `google-adk` framework.
-- All major HTTP methods (GET, POST, PATCH, DELETE) must be represented as agent capabilities.
-- Ensure proper handling of JSON data and HTTP error statuses.
+---
 
-## Evaluation Criteria
-- **Functional Correctness**: Agents should correctly perform the requested API operations.
-- **Agent Intelligence**: The root agent should accurately route requests to the correct specialized agent.
-- **Code Quality**: Clean implementation of tools and agent configurations.
+# Tasks
+
+## 1. Analyze API Endpoints
+Study the REST Countries API and understand the available endpoints and response structures.
+
+---
+
+## 2. Implement API Tool
+Create a reusable API utility/tool that can:
+- Send GET requests
+- Handle query parameters
+- Parse JSON responses
+- Handle API failures and invalid country names
+- Return structured responses
+
+---
+
+# Build Specialized Agents
+
+## Root Agent (Master Coordinator)
+
+### Responsibilities
+- Understand user intent
+- Route requests to appropriate specialized agents
+- Combine responses from multiple agents
+- Maintain conversation flow
+
+### Example Queries
+- "Tell me about India"
+- "Compare India and Japan"
+- "Which countries use Euro?"
+
+---
+
+# Specialized Agents
+
+---
+
+# 1. Country Info Agent
+
+## Responsibilities
+- Fetch country details
+- Capital city
+- Population
+- Region
+- Area
+- Timezones
+- Native names
+
+## Example Queries
+- "Tell me about India"
+- "What is the capital of Germany?"
+
+## Endpoints to Implement
+
+### Get country by name
+```bash
+GET https://restcountries.com/v3.1/name/{country}
+```
+
+### Get country by country code
+```bash
+GET https://restcountries.com/v3.1/alpha/{code}
+```
+
+### Get all countries
+```bash
+GET https://restcountries.com/v3.1/all
+```
+
+---
+
+# 2. Currency Agent
+
+## Responsibilities
+- Identify currencies
+- Find countries using same currency
+- Currency symbol and code extraction
+
+## Example Queries
+- "What currency is used in Japan?"
+- "Which countries use Euro?"
+
+## Endpoints to Implement
+
+### Get all countries for currency analysis
+```bash
+GET https://restcountries.com/v3.1/all
+```
+
+### Get country by name
+```bash
+GET https://restcountries.com/v3.1/name/{country}
+```
+
+---
+
+# 3. Language Agent
+
+## Responsibilities
+- Extract official languages
+- Find multilingual countries
+- Find countries sharing same language
+
+## Example Queries
+- "Which countries speak French?"
+- "Official languages of Switzerland"
+
+## Endpoints to Implement
+
+### Get country by language
+```bash
+GET https://restcountries.com/v3.1/lang/{language}
+```
+
+### Get country by name
+```bash
+GET https://restcountries.com/v3.1/name/{country}
+```
+
+### Get all countries
+```bash
+GET https://restcountries.com/v3.1/all
+```
+
+---
+
+# 4. Geography Agent
+
+## Responsibilities
+- Border countries
+- Continents
+- Regions and subregions
+- Geographic analysis
+
+## Example Queries
+- "Which countries border India?"
+- "Countries in South America"
+
+## Endpoints to Implement
+
+### Get countries by region
+```bash
+GET https://restcountries.com/v3.1/region/{region}
+```
+
+### Get country by name
+```bash
+GET https://restcountries.com/v3.1/name/{country}
+```
+
+### Get country by country code
+```bash
+GET https://restcountries.com/v3.1/alpha/{code}
+```
+
+---
+
+# 5. Population Analytics Agent
+
+## Responsibilities
+- Population comparisons
+- Population rankings
+- Density analysis
+
+## Example Queries
+- "Top 10 populated countries"
+- "Compare India and China population"
+
+## Endpoints to Implement
+
+### Get all countries
+```bash
+GET https://restcountries.com/v3.1/all
+```
+
+### Get countries by region
+```bash
+GET https://restcountries.com/v3.1/region/{region}
+```
+
+### Get country by name
+```bash
+GET https://restcountries.com/v3.1/name/{country}
+```
+
+---
+
+# 6. Comparison Agent
+
+## Responsibilities
+Compare:
+- Population
+- Area
+- Currency
+- Languages
+- Capital
+- Region
+
+## Example Queries
+- "Compare India and USA"
+- "Japan vs South Korea"
+
+## Endpoints to Implement
+
+### Get country by name
+```bash
+GET https://restcountries.com/v3.1/name/{country}
+```
+
+### Get country by code
+```bash
+GET https://restcountries.com/v3.1/alpha/{code}
+```
+
+---
+
+# 7. Flag & Symbols Agent (Optional)
+
+## Responsibilities
+- Country flags
+- Coat of arms
+- National symbols
+
+## Example Queries
+- "Show Japan flag"
+
+## Endpoints to Implement
+
+### Get country by name
+```bash
+GET https://restcountries.com/v3.1/name/{country}
+```
+
+### Get all countries
+```bash
+GET https://restcountries.com/v3.1/all
+```
+
+---
+
+# Requirements
+
+## Framework
+Use:
+```bash
+google-adk
+```
+
+---
+
+# API Handling Requirements
+
+The system should:
+- Handle invalid country names gracefully
+- Handle empty API responses
+- Parse nested JSON responses
+- Return structured outputs
+- Implement proper exception handling
+
+---
+
+# Multi-Agent Coordination
+
+The root agent must:
+- Delegate tasks intelligently
+- Identify the correct specialized agent
+- Aggregate outputs from multiple agents
+
+---
+
+# Suggested Architecture
+
+```text
+                    ┌─────────────────┐
+                    │   Root Agent    │
+                    └────────┬────────┘
+                             │
+       ┌──────────────────────────────────────┐
+       │                                      │
+┌───────────────┐                    ┌────────────────┐
+│ Country Agent │                    │ Comparison Ag.│
+└───────────────┘                    └────────────────┘
+       │                                      │
+ ┌────────────┬─────────────┬─────────────┬─────────────┐
+ │            │             │             │             │
+▼            ▼             ▼             ▼             ▼
+Currency   Language    Geography    Population    Regional
+ Agent      Agent        Agent        Agent         Agent
+```
+
+---
+
+# Example Queries
+
+## Basic Queries
+- "Tell me about India"
+- "Capital of Brazil"
+- "Currency used in Japan"
+
+---
+
+## Intermediate Queries
+- "Countries speaking Spanish"
+- "Countries bordering China"
+
+---
